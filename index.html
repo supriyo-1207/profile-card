@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./src/style.css">
 </head>
-
-<body>
-    <div class="container">
-        <div class="card-container">
-            <div class="card">
-                <div class="header">
-                    <div class="left-arrow">
-                        <i class="fa-solid fa-arrow-left"></i>
-                    </div>
-                    <div class="right-arrow">
-                        <i class="fa-regular fa-heart"></i>
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </div>
-                </div>
-                <div class="card-body">
-                    <div class="img">
-                        <img src="user.png" alt="user">
-                    </div>
-                    <div class="content">
-                        <h1>Supriyo Maity</h1>
-                        <p>Full Stack Developer</p>
-                        <p>Coding isn't just my job, it's my passion.</p>
-                        <button>Follow Me</button>
-                    </div>
-                </div>
-                <div class="social-media">
-                    <a href="https://www.instagram.com/supriyomaity_1207/" target="_blank" class="instagram"><i class="fab fa-instagram social"></i></a>
-                    <a href="https://www.linkedin.com/in/supriyomaity/" target="_blank" class="linkedin"><i class="fab fa-linkedin social"></i></a>
-                    <a href="https://twitter.com/supriyo_1207"  target="_blank" class="twitter"><i class="fab fa-twitter social"></i></a>
-                    <a href="https://github.com/SupriyoMaity1207" target="_blank" class="github"><i class="fab fa-github social"></i></a>
-                </div>
-            </div>
-        </div>
+<body class="dark-mode">
+  <div class="card">
+    <div class="img-container">
+      <img src="./image/user.jpg" alt="Profile Image">
     </div>
-</body>
+    <div class="content">
+      <div class="theme-toggle" id="themeToggle"><i class="fas fa-sun"></i></div>
+      <h2 id="name">John Doe</h2>
+      <p class="role" id="role">Web Developer</p>
+      <p class="bio" id="bio">Passionate web developer with expertise in HTML, CSS, and JavaScript. Love creating responsive and user-friendly websites.</p>
+      
+      <div class="social-icons">
+        <a href="#" target="_blank" id="github"><i class="fab fa-github"></i></a>
+        <a href="#" target="_blank" id="linkedin"><i class="fab fa-linkedin"></i></a>
+        <a href="#" target="_blank" id="twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank" id="instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+      
+      <div class="contact-section">
+        <h3>Contact Information</h3>
+        <div class="contact-info">
+          <div>
+            <i class="fas fa-envelope"></i>
+            <span id="email">supriyo.codes@gmail.com</span>
+          </div>
+          <div>
+            <i class="fas fa-phone"></i>
+            <span id="phone">816-752-4491</span>
+          </div>
+          <div>
+            <i class="fas fa-map-marker-alt"></i>
+            <span id="location">Kolkata, West Bengal, India</span>
+          </div>
+        </div>
+        <button class="actionBtn" id="downloadBtn"><i class="fas fa-download"></i> Download CV</button>
+      </div>
+    </div>
+  </div>
 
+  <!-- Add your JavaScript code here -->
+   <script src="./src/main.js"></script>
+</body>
 </html>
