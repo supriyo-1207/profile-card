@@ -5,7 +5,6 @@ ResponsiveProfileCard is a responsive HTML/CSS project that allows users to crea
 
 
 
-
 ## Features
 
 
