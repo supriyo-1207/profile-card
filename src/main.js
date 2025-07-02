@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     // Option 2: If your PDF is in your project directory
     const a = document.createElement('a');
-    a.href = '../cv/Supriyo_Maity_CV.pdf';
+    a.href = '../cv/cv_web_developer.docx.pdf';
     a.download = 'Supriyo_Maity_CV.pdf';
     document.body.appendChild(a);
     a.click();
